@@ -26,17 +26,27 @@ This is an automated workflow for the report quiz bot. This quiz bot performs th
 4. Edit the env.sh file with the necessary data
 
    - Edit the **TELEGRAM_BOT_TOKEN** variable
-
-   **How to get a telegram BOT Token** - Visit https://telegram.me/BotFather - Use the command **/newbot** and follow the instructions to create a new bot - Copy the token from @BotFather telegram bot and paste the token in the env.sh file
+      - **How to get a telegram BOT Token**
+         - Visit https://telegram.me/BotFather
+         - Use the command **/newbot** and follow the instructions to create a new bot
+         - Copy the token from @BotFather telegram bot and paste the token in the env.sh file
 
    - Edit the **TELEGRAM_GROUP_ID** variable
-
-   **How to get a telegram Group ID** - You remember the bot you just created? Now take that bot and add it into any group of your choice (How to add a bot to a telegram group)[https://stackoverflow.com/questions/37338101/how-to-add-a-bot-to-a-telegram-group] - Now visit this site `https://api.telegram.org/bot[BOT_TOKEN_HERE]/getMe` - replace `[BOT_TOKEN_HERE]` with the bot token you got from bot BotFather - When the page opens ensure you can see a page looking like this - Now go to the group you just added the bot and use this command `/start@THE_USERNAME_OF_YOUR_BOT` - Replace `THE_USERNAME_OF_YOUR_BOT` with your bots username - Now open this link `https://api.telegram.org/bot[BOT_TOKEN_HERE]/getUpdates` and you should see a json object called
-   results. Look for any key with the name **chat** and under it's child elements you will see **id**. Copy the **id** including the `-`(minus) sign in front of the id - Copy the group ID from the page you just opened and paste it in the env.sh file
+      -**How to get a telegram Group ID**
+        - You remember the bot you just created? Now take that bot and add it into any group of your choice (How to add a bot to a telegram group)[https://stackoverflow.com/questions/37338101/how-to-add-a-bot-to-a-telegram-group]
+        - Now visit this site `https://api.telegram.org/bot[BOT_TOKEN_HERE]/getMe`
+        - replace `[BOT_TOKEN_HERE]` with the bot token you got from bot BotFather
+        - When the page opens ensure you can see a page looking like this
+        - Now go to the group you just added the bot and use this command `/start@THE_USERNAME_OF_YOUR_BOT`
+        - Replace `THE_USERNAME_OF_YOUR_BOT` with your bots username
+        - Now open this link `https://api.telegram.org/bot[BOT_TOKEN_HERE]/getUpdates` and you should see a json object called results. Look for any key with the name **chat** and under it's child elements you will see **id**. Copy the **id** including the `-`(minus) sign in front of the id
+        - Copy the group ID from the page you just opened and paste it in the env.sh file
 
    - Edit the **QUIZAPI_KEY** variable
-
-   **How to get a quizapi key** - Visit https://quizapi.io/ - Create an account - Visit https://quizapi.io/api/ page and generate a new key. Copy the key and paste it in the env.sh file
+      - **How to get a quizapi key**
+        - Visit https://quizapi.io/
+        - Create an account
+        - Visit https://quizapi.io/api/ page and generate a new key. Copy the key and paste it in the env.sh file
 
 5. Setting up your bash terminal to run the bot
 
