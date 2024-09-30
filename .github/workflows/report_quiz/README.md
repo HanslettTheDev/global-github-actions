@@ -32,14 +32,17 @@ This is an automated workflow for the report quiz bot. This quiz bot performs th
          - Copy the token from @BotFather telegram bot and paste the token in the env.sh file
 
    - Edit the **TELEGRAM_GROUP_ID** variable
-      -**How to get a telegram Group ID**
+      - **How to get a telegram Group ID**
         - You remember the bot you just created? Now take that bot and add it into any group of your choice (How to add a bot to a telegram group)[https://stackoverflow.com/questions/37338101/how-to-add-a-bot-to-a-telegram-group]
         - Now visit this site `https://api.telegram.org/bot[BOT_TOKEN_HERE]/getMe`
         - replace `[BOT_TOKEN_HERE]` with the bot token you got from bot BotFather
         - When the page opens ensure you can see a page looking like this
+        - ![image](https://github.com/user-attachments/assets/9dadba18-154a-479c-a870-adaf63469fa4)
         - Now go to the group you just added the bot and use this command `/start@THE_USERNAME_OF_YOUR_BOT`
         - Replace `THE_USERNAME_OF_YOUR_BOT` with your bots username
         - Now open this link `https://api.telegram.org/bot[BOT_TOKEN_HERE]/getUpdates` and you should see a json object called results. Look for any key with the name **chat** and under it's child elements you will see **id**. Copy the **id** including the `-`(minus) sign in front of the id
+        - ![image](https://github.com/user-attachments/assets/610217af-2ed8-4309-a59d-2eea5399ed99)
+
         - Copy the group ID from the page you just opened and paste it in the env.sh file
 
    - Edit the **QUIZAPI_KEY** variable
@@ -52,17 +55,21 @@ This is an automated workflow for the report quiz bot. This quiz bot performs th
 
    - Run the following command in your terminal. Ensure that you have `jq` and `git` installed, if not install them using `sudo apt install jq git`
 
+
    ```bash
    source main.sh
    chmod +x main.sh
    ```
 
+
    - Now to run this bot, you need to run the commands in a following order for them to work normally. All the functions are located in `.github/workflows/report_quiz/quiz/functions.sh` file
+
 
    ```bash
    . main.sh; start_quiz_competition # Use this command to send/initiate a quiz competition in the group
    . main.sh; fetch_quiz_users_answers # Use this command to fetch the users answers before stoping the quiz
    . main.sh; stop_quiz_competition # Use this command to stop the quiz and to prepare for sending results
    ```
+
 
 6. Please, feel free to contribute to make this bot better. Thanks
