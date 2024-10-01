@@ -33,7 +33,7 @@ This is an automated workflow for the report quiz bot. This quiz bot performs th
 
    - Edit the **TELEGRAM_GROUP_ID** variable
       - **How to get a telegram Group ID**
-        - You remember the bot you just created? Now take that bot and add it into any group of your choice (How to add a bot to a telegram group)[https://stackoverflow.com/questions/37338101/how-to-add-a-bot-to-a-telegram-group]
+        - You remember the bot you just created? Now take that bot and add it into any group of your choice [How to add a bot to a telegram group](https://stackoverflow.com/questions/37338101/how-to-add-a-bot-to-a-telegram-group)
         - Now visit this site `https://api.telegram.org/bot[BOT_TOKEN_HERE]/getMe`
         - replace `[BOT_TOKEN_HERE]` with the bot token you got from bot BotFather
         - When the page opens ensure you can see a page looking like this
